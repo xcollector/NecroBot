@@ -47,9 +47,9 @@ namespace PoGo.NecroBot.CLI
 
             Logger.SetLogger(new ConsoleLogger(LogLevel.SoftBan), subPath);
 
-            if( CheckKillSwitch() )
+            /*if( CheckKillSwitch() )
                 return;
-
+                */
             var profilePath = Path.Combine( Directory.GetCurrentDirectory(), subPath );
             var profileConfigPath = Path.Combine( profilePath, "config" );
             var configFile = Path.Combine( profileConfigPath, "config.json" );
